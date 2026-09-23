@@ -1,0 +1,3 @@
+# Runtime state: database, generated configs, JWT keys, SSL certs
+data/
+letsencrypt/
