@@ -15,7 +15,7 @@ Admin UI: `http://<server-ip>:81`
 |------|---------|
 | 80   | Public HTTP |
 | 443  | Public HTTPS |
-| 81   | Admin UI (restrict via firewall once set up) |
+| 81   | Admin UI — bound to 127.0.0.1 only; reach it via `npm.<domain>` or `ssh -L 8181:localhost:81` |
 
 ## Data
 
