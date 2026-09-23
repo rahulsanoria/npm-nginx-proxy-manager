@@ -10,3 +10,11 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - proxy
+
+networks:
+  # Shared network for all proxied apps. Created by this stack with a fixed
+  # name; other stacks join it as `external: true`.
+  proxy:
+    name: proxy
